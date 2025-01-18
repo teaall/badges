@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Run Shields.io Docker container
         run: |
-          docker pull shieldsio/shields
+          docker pull shieldsio/shields@sha256:087e5fca593dec48c2eb18db4f6986175bae6a5d23768d6fb07f671e3029df66
           docker run -d -p 4000:80 shieldsio/shields
 
       - name: Fetch badge from Shields.io
